@@ -1,6 +1,29 @@
 # PebbleBit
 
-PebbleBit is a small, statically typed programming language designed for teaching compiler construction and systems programming. It compiles directly to native executables using LLVM.
+**A small, statically typed programming language that compiles directly to native executables.**
+
+<p align="center">
+  <img src="./images/pebblebit-banner.png" alt="PebbleBit — Braces and Pebbles" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-176F65.svg" alt="Version 1.0.0">
+  <img src="https://img.shields.io/badge/LLVM-18-62BBAA.svg" alt="LLVM 18">
+  <img src="https://img.shields.io/badge/language-C17-176F65.svg" alt="C17">
+  <img src="https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-92969A.svg" alt="Supported Platforms">
+</p>
+
+---
+
+## About PebbleBit
+
+PebbleBit is a small, statically typed programming language designed for teaching compiler construction and systems programming.
+
+It compiles directly to native executables using LLVM. The compiler is implemented in C17 and uses the LLVM C API for code generation.
+
+PebbleBit aims to make systems programming concepts approachable through a deliberately small language design, without hiding how compilation and native execution work.
+
+Source files use the `.pb` extension.
 
 ---
 
@@ -14,7 +37,9 @@ PebbleBit compiles to native binaries on:
 
 ---
 
-## Standalone Windows Installer (x64)
+## Getting Started on Windows
+
+### Standalone Windows Installer (x64)
 
 PebbleBit v1.0.0 is available as a standalone installer for 64-bit Windows.
 
@@ -139,6 +164,19 @@ PATH cleanup follows these rules:
 
 ---
 
+## Language Overview
+
+<p style="font-size: 30px;">
+  <img src="./images/pebblebit-file.svg" alt="PebbleBit source file icon" width="30">
+  PebbleBit source files use the `.pb` extension.
+</p>
+
+The language provides a statically typed programming model and constructs for writing structured programs, including functions, variables, control flow, structs, enums, arrays and modules.
+
+For language syntax and examples, see the project documentation and examples in this repository.
+
+---
+
 ## Toolchain & Dependencies
 
 The following dependencies are required when building PebbleBit from source.
@@ -190,6 +228,8 @@ pacman -S mingw-w64-clang-x86_64-clang \
 Clone the repository and build using GNU Make:
 
 ```bash
+git clone https://github.com/m-ronak-gh/pebblebit.git
+cd pebblebit
 make
 ```
 
